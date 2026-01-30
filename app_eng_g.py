@@ -102,10 +102,7 @@ def main():
         """
     st.markdown(hide_st_style, unsafe_allow_html=True)
     # --- 👆 加入這段 CSS 語法結束 👆 ---
-
-    init_db()
-    
-
+   
     st.title("☁️ Tivo Development Kit Inventory System")
     st.caption("Data is synced directly to Google Sheets.")
     st.markdown("---")
@@ -238,5 +235,6 @@ def main():
 if __name__ == '__main__':
 
     main()
+
 
 
