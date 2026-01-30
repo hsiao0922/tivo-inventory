@@ -178,7 +178,7 @@ def main():
             df,
             column_config={
                 "Delete?": st.column_config.CheckboxColumn("Delete?", default=False),
-                "id": st.column_config.NumberColumn("System ID", disabled=True),
+                "id": None,
                 "date": st.column_config.DateColumn("Date"),
                 "item_name": st.column_config.TextColumn("Item Name"),
                 "item_id": st.column_config.TextColumn("Full ID"),
@@ -225,3 +225,4 @@ def main():
 if __name__ == '__main__':
 
     main()
+
