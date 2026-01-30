@@ -92,6 +92,19 @@ def delete_data(target_id):
 
 def main():
     st.set_page_config(page_title="Tivo DK Inventory (Cloud)", layout="wide")
+ # --- 👇 加入這段 CSS 語法開始 👇 ---
+    hide_st_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+        """
+    st.markdown(hide_st_style, unsafe_allow_html=True)
+    # --- 👆 加入這段 CSS 語法結束 👆 ---
+
+    init_db()
+    
 
     st.title("☁️ Tivo Development Kit Inventory System")
     st.caption("Data is synced directly to Google Sheets.")
@@ -225,4 +238,5 @@ def main():
 if __name__ == '__main__':
 
     main()
+
 
