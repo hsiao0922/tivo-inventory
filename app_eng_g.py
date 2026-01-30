@@ -93,7 +93,7 @@ def delete_data(target_id):
 def main():
     st.set_page_config(page_title="Tivo DK Inventory (Cloud)", layout="wide")
 
-    st.title("☁️ Tivo DK Inventory System (Google Sheets)")
+    st.title("☁️ Tivo Development Kit Inventory System")
     st.caption("Data is synced directly to Google Sheets.")
     st.markdown("---")
 
@@ -223,4 +223,5 @@ def main():
         st.info("Sheet is empty. Add data from sidebar.")
 
 if __name__ == '__main__':
+
     main()
