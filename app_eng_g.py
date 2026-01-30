@@ -126,7 +126,7 @@ def main():
         if st.button("Submit", type="primary"):
             if input_name and input_id_num:
                 with st.spinner("Saving to Google Sheets..."):
-                    full_id = f"VEWD-{input_id_num}"
+                    full_id = f"VDEV-{input_id_num}"
                     # [修改] 傳入 input_note
                     add_data(input_date, input_name, full_id, input_keeper, input_chip, input_loc, input_note)
                     st.success(f"Added: {full_id}")
@@ -240,3 +240,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
