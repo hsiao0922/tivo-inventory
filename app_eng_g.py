@@ -122,7 +122,7 @@ def main():
         
         col_prefix, col_num = st.columns([1, 2])
         with col_prefix:
-            st.text_input("Prefix", "VEWD-", disabled=True)
+            st.text_input("Prefix", "VDEV-", disabled=True)
         with col_num:
             input_id_num = st.text_input("ID Number", placeholder="e.g., 1001")
         
@@ -235,6 +235,7 @@ def main():
 if __name__ == '__main__':
 
     main()
+
 
 
 
